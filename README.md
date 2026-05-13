@@ -1,2 +1,2 @@
 # cgu
-les cgus de toutes mes applications
+Les cgus de toutes mes applications
