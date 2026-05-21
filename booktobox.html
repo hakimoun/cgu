@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookToBox - Compliance and Privacy</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #11243d;
+      --muted: #4d5e75;
+      --accent: #0f766e;
+      --line: #dbe3ee;
+      --ok-bg: #ecfdf5;
+      --ok-line: #a7f3d0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 18%, #dbeafe 0, transparent 35%),
+        radial-gradient(circle at 85% 80%, #ccfbf1 0, transparent 30%),
+        linear-gradient(160deg, #eef3fb, #f8fbff);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 10px 28px rgba(17, 36, 61, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+      line-height: 1.2;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    h2 {
+      margin: 26px 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 8px 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .highlight {
+      margin-top: 18px;
+      border: 1px solid var(--ok-line);
+      background: var(--ok-bg);
+      color: #14532d;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+    }
+
+    .meta {
+      margin-top: 22px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="BookToBox privacy and compliance policy">
+    <h1>BookToBox - Play Store Compliance and Data Handling</h1>
+    <p class="lead">
+      This page explains how <strong>BookToBox</strong> aligns with Google Play requirements
+      for transparency and protection of user and device-related data.
+    </p>
+
+    <h2>1. App purpose</h2>
+    <p>
+      BookToBox is an Android app for local inventory management of physical books.
+      It allows users to create boxes, assign books to them, generate one PDF list per box,
+      and share that PDF through standard Android share actions.
+    </p>
+
+    <h2>2. Data processed</h2>
+    <p>To provide its core features, the app may process the following data categories:</p>
+    <ul>
+      <li>Book photos: front cover, back cover, and optional ISBN/barcode photo.</li>
+      <li>Book metadata: title, author, and ISBN when available.</li>
+      <li>Organization metadata: box name and optional box location.</li>
+      <li>Derived files: generated box inventory PDF documents.</li>
+    </ul>
+
+    <h2>3. Purposes of processing</h2>
+    <ul>
+      <li>Provide book inventory and box-based lookup features.</li>
+      <li>Prefill ISBN/title/author from photos when extraction is available.</li>
+      <li>Generate printable PDF lists to identify box contents.</li>
+      <li>Enable local PDF sharing only when explicitly requested by the user.</li>
+    </ul>
+
+    <h2>4. Android permissions used</h2>
+    <ul>
+      <li><strong>CAMERA</strong>: capture book photos and scan ISBN barcodes.</li>
+      <li><strong>INTERNET</strong>: technical support for some libraries; no cloud inventory upload in MVP scope.</li>
+    </ul>
+
+    <h2>5. Storage and sharing</h2>
+    <p>
+      BookToBox follows a <strong>local-first</strong> model: boxes, books, photos, and generated PDFs
+      are stored locally on the device as part of normal app behavior.
+    </p>
+    <p>
+      In MVP scope, the app does not provide cloud sync or automatic publishing to marketplaces.
+      Data sharing occurs only when the user explicitly triggers the "Share" action for a generated PDF.
+    </p>
+
+    <h2>6. User control and transparency</h2>
+    <ul>
+      <li>Users choose which books and data are added to the app.</li>
+      <li>Users can manually correct extracted metadata before saving.</li>
+      <li>Users can manage and remove stored boxes and books from within the app.</li>
+    </ul>
+
+    <h2>7. Google Play compliance statement</h2>
+    <p>
+      Play Store data safety disclosures should reflect this behavior: functional data handling
+      limited to local inventory use, no sale of personal data, and no cloud inventory upload
+      within the current MVP scope.
+    </p>
+
+    <h2>8. Privacy contact</h2>
+    <p>
+      Data Controller: <strong>Hakim OULD AHMED</strong><br />
+      Email: <strong>hakim.ouldah@gmail.com</strong>
+    </p>
+
+    <div class="highlight">
+      Replace the placeholders before publishing: [Publisher Name], [contact@your-domain.com].
+      This content is aligned with the current BookToBox OpenSpec MVP scope.
+    </div>
+
+    <p class="meta">Last updated: May 21, 2026</p>
+  </main>
+</body>
+</html>
